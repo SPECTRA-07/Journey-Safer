@@ -1,0 +1,96 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    }
+    body{
+        background-color: rgb(212, 211, 211);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .userDetails{
+        height: 500px;
+      width: 260px;
+      background-color: white;
+      padding: 5px 20px;
+      border-radius: 24px;
+      box-shadow: 12px 12px 12px gray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile{
+        text-align: center;
+      font-size:100px;
+    }
+    .inps{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+      background-color:white;
+      /* border-radius: 12px; */
+      padding: 10px;
+      height: 240px;
+      margin:10px 5px 5px 5px;
+      width: 220px;
+    }
+    .ins{
+        display: flex;
+        flex-direction: column;
+    }
+    .ins label{
+        font-size: large;
+        font-weight: 500;
+    }
+    .ins input{
+      border: 1px solid rgba(214, 210, 210, 0.555);
+      background-color: rgba(229, 229, 229, 0.696);
+      border-radius: 6px;
+      padding: 0 12px;
+      height: 28px;
+    }
+
+    .register{
+        padding: 5px 12px;
+      background-color: #288fff;
+      border: 0px;
+      border-radius: 12px;
+      width: 130px;
+      align-self: center;
+      font-size: medium;
+      font-weight: 600;
+      color: white;
+      height: 35px;
+      cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="userDetails">
+        <div class="profile">🙋</div>
+        <h2>User Registration</h2>
+        <div class="inps">
+            <form action="/register" method="POST" class="ins">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <button type="submit" class="register">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
