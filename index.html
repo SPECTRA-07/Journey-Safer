@@ -1,106 +1,127 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Form</title>
+    <title>User Registration</title>
     <style>
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    }
-    body{
-        background-color: rgb(212, 211, 211);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-    }
-    .carDetails{
-      height: 650px;
-      width: 350px;
-      background-color: white;
-      padding: 5px 20px;
-      border-radius: 24px;
-      box-shadow: 12px 12px 12px gray;
-    }
-    .carNam{
-      text-align: center;
-      font-size:150px;
-      margin: 0;
-    }
-    .carDetails .car img{
-      width: 330px;
-    }
-    .carDetails form{
-      display: flex;
-      flex-direction: column;
-    }
-    .inps{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 10px;
-      background-color:white;
-      /* border-radius: 12px; */
-      padding: 10px;
-      height: 240px;
-      margin:10px 5px 5px 5px;
-      width: 300px;
-    }
-    .inps h2{
-        margin: 30px 0px;
-    }
-    .ins{
-        display: flex;
-        flex-direction: column;
-    }
-    .ins label{
-        font-size: large;
-        font-weight: 600;
-    }
-    .ins input{
-      border: 1px solid rgba(214, 210, 210, 0.555);
-      background-color: rgba(229, 229, 229, 0.696);
-      border-radius: 6px;
-      padding: 0 12px;
-      height: 28px;
-    }
-    #submitBtn{
-      padding: 5px 12px;
-      background-color: #288fff;
-      border: 0px;
-      border-radius: 12px;
-      width: 180px;
-      align-self: center;
-      font-size: medium;
-      font-weight: 600;
-      color: white;
-      height: 40px;
-      cursor: pointer;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(145deg, #f5f6f7, #a2b5d1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            
+        }
+
+        .container {
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.297);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 300px; /* Adjust the width as needed */
+        }
+
+        .title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 25px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease, background-color 0.3s ease;
+            outline: none;
+        }
+
+        .form-group input:focus {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        .btn-submit {
+
+            background-color: #007bffaf;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #0056b3;
+        }
+
     </style>
 </head>
 <body>
-    <div class="carDetails">
-        <div class="car">
-            <!-- <img src="images/gwagon.jpg" alt="Car"> -->
-            <h1 class="carNam">🚗</h1>            
-        </div>
-        <div class="inps">
-            <h2>Car Details</h2>
-            <form action="/submit" method="post" class="ins">
-                <label for="name">Car Name:</label>
-                <input type="text" id="name" name="name"><br>
-                <label for="currentPetrol">Current Petrol:</label>
-                <input type="number" id="currentPetrol" name="currentPetrol"><br>
-                <label for="mileage">Mileage:</label>
-                <input type="number" id="mileage" name="mileage"><br><br>
-                <input type="submit" value="Submit" id="submitBtn">
-            </form>
-        </div>
+    <div class="container">
+        <!-- <div class="logo">
+            <img src="https://raw.githubusercontent.com/PankajKumar17/Replica/main/1.png" alt="Lo">
+        </div> -->
+        <h2 class="title">Car Details</h2>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="name">Car Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="currentPetrol">Current Petrol</label>
+                <input type="number" id="currentPetrol" name="currentPetrol" required>
+            </div>
+            <div class="form-group">
+                <label for="mileage">Mileage</label>
+                <input type="number" id="mileage" name="mileage" required>
+            </div>
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
     </div>
 </body>
 </html>

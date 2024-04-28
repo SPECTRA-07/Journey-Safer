@@ -1,107 +1,155 @@
-<!-- login.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Login</title>
+    <meta name="google-signin-client_id" content="728001145792-uad27o1alg832hpmmnf7kct6oc6up69c.apps.googleusercontent.com">
     <style>
-         *{
-        margin: 0;
-        padding: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    }
-    body{
-        background-color: rgb(212, 211, 211);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-    }
-    .userDetails{
-        height: 500px;
-      width: 260px;
-      background-color: white;
-      padding: 5px 20px;
-      border-radius: 24px;
-      box-shadow: 12px 12px 12px gray;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .profile{
-        text-align: center;
-      font-size:100px;
-    }
-    .inps{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 10px;
-      background-color:white;
-      /* border-radius: 12px; */
-      padding: 10px;
-      height: 240px;
-      margin:10px 5px 5px 5px;
-      width: 220px;
-    }
-    .ins{
-        display: flex;
-        flex-direction: column;
-    }
-    .ins label{
-        font-size: large;
-        font-weight: 500;
-    }
-    .ins input{
-      border: 1px solid rgba(214, 210, 210, 0.555);
-      background-color: rgba(229, 229, 229, 0.696);
-      border-radius: 6px;
-      padding: 0 12px;
-      height: 28px;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    .register{
-        padding: 5px 12px;
-      background-color: #288fff;
-      border: 0px;
-      border-radius: 12px;
-      width: 130px;
-      align-self: center;
-      font-size: medium;
-      font-weight: 600;
-      color: white;
-      height: 35px;
-      cursor: pointer;
-    }
+        body {
+            background: linear-gradient(145deg, #f5f6f7, #a2b5d1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
 
-    .new{
-        padding: 5px 12px;
-        background-color: #28c6fff1;
-      border: 0px;
-      border-radius: 12px;
-      color: white;
-      cursor: pointer;
-    }
+        .container {
+            background: rgba(255, 255, 255, 0.297);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
 
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 300px;
+            /* height: 100px; Adjust the width as needed */
+        }
+
+        .title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 25px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease, background-color 0.3s ease;
+            outline: none;
+        }
+
+        .form-group input:focus {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        .btn-login {
+            background-color: #007bfff5;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-login:hover {
+            background-color: #0056b3;
+        }
+
+        .text-center {
+            text-align: center;
+            color: #333;
+        }
+
+        .new-user {
+            color: #007bff;
+            margin-top: 10px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .new-user:hover {
+            color: #0056b3;
+        }
     </style>
 </head>
 <body>
-    <div class="userDetails">
-        <div class="profile">🙋‍♂️</div>
-        <h2>User Login</h2>
-        <div class="inps">
-            <form action="/login" method="POST" class="ins">
-                <label for="username">Username:</label><br>
-                <input type="text" id="username" name="username" required><br>
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password" required><br><br>
-                <button type="submit" class="register">Login</button>
-            </form>
-            <form action="/register" method="GET">
-                <button type="submit" class="new">New User</button>
-            </form>
+    <div class="container">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/PankajKumar17/Replica/main/1.png" alt="logo">
         </div>
+        <h2 class="title">User Login</h2>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn-login">Login</button>
+        </form>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <a href="#" onclick="signOut();">Sign out</a>
+        <p class="text-center">New User? <a href="/register" class="new-user">Register</a></p>
     </div>
+    <script>
+        function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+    }
+    function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+            console.log('User signed out.');
+        });
+    }
+    </script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 </html>

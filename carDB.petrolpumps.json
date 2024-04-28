@@ -1,0 +1,550 @@
+[{
+  "_id": {
+    "$oid": "65f33610d32a5699d80a9672"
+  },
+  "name": "Indian Oil",
+  "coordinates": [
+    72.877655,
+    19.075983
+  ],
+  "address": "Mumbai, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f33610d32a5699d80a9673"
+  },
+  "name": "Bharat Petroleum",
+  "coordinates": [
+    77.594562,
+    12.971599
+  ],
+  "address": "Bengaluru, Karnataka"
+},
+{
+  "_id": {
+    "$oid": "65f33610d32a5699d80a9674"
+  },
+  "name": "Hindustan Petroleum",
+  "coordinates": [
+    77.1025,
+    28.7041
+  ],
+  "address": "New Delhi, Delhi"
+},
+{
+  "_id": {
+    "$oid": "65f33610d32a5699d80a9675"
+  },
+  "name": "Reliance Petroleum",
+  "coordinates": [
+    72.8777,
+    19.076
+  ],
+  "address": "Mumbai, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f33610d32a5699d80a9676"
+  },
+  "name": "Essar Oil",
+  "coordinates": [
+    72.5714,
+    23.0225
+  ],
+  "address": "Surat, Gujarat"
+},
+{
+  "_id": {
+    "$oid": "65f33610d32a5699d80a9677"
+  },
+  "name": "Shell",
+  "coordinates": [
+    72.8597,
+    19.2392
+  ],
+  "address": "Thane, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f33610d32a5699d80a9678"
+  },
+  "name": "Adani Gas",
+  "coordinates": [
+    72.5714,
+    23.0225
+  ],
+  "address": "Ahmedabad, Gujarat"
+},
+{
+  "_id": {
+    "$oid": "65f33610d32a5699d80a9679"
+  },
+  "name": "GAIL Gas",
+  "coordinates": [
+    77.1025,
+    28.7041
+  ],
+  "address": "New Delhi, Delhi"
+},
+{
+  "_id": {
+    "$oid": "65f33610d32a5699d80a967a"
+  },
+  "name": "CNG Gas Station",
+  "coordinates": [
+    88.3639,
+    22.5726
+  ],
+  "address": "Kolkata, West Bengal"
+},
+{
+  "_id": {
+    "$oid": "65f33610d32a5699d80a967b"
+  },
+  "name": "HPCL",
+  "coordinates": [
+    77.5946,
+    12.9716
+  ],
+  "address": "Bengaluru, Karnataka"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d5f"
+  },
+  "name": "Bharat Petroleum",
+  "coordinates": [
+    73.863706,
+    18.519106
+  ],
+  "address": "Kothrud, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d60"
+  },
+  "name": "Indian Oil Corporation",
+  "coordinates": [
+    73.837728,
+    18.520488
+  ],
+  "address": "Wakad, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d61"
+  },
+  "name": "Hindustan Petroleum",
+  "coordinates": [
+    73.786292,
+    18.598937
+  ],
+  "address": "Hadapsar, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d62"
+  },
+  "name": "Reliance Petroleum",
+  "coordinates": [
+    73.77743,
+    18.520712
+  ],
+  "address": "Kharadi, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d63"
+  },
+  "name": "Shell",
+  "coordinates": [
+    73.77645,
+    18.507086
+  ],
+  "address": "Magarpatta, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d64"
+  },
+  "name": "Essar Petrol Pump",
+  "coordinates": [
+    73.847487,
+    18.53489
+  ],
+  "address": "Baner, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d65"
+  },
+  "name": "CNG Petrol Pump",
+  "coordinates": [
+    73.85631,
+    18.498227
+  ],
+  "address": "Pimpri, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d66"
+  },
+  "name": "Adani Petrol Pump",
+  "coordinates": [
+    73.83533,
+    18.47927
+  ],
+  "address": "Hinjewadi, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d67"
+  },
+  "name": "BPCL",
+  "coordinates": [
+    73.82949,
+    18.51457
+  ],
+  "address": "Aundh, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d68"
+  },
+  "name": "HPCL",
+  "coordinates": [
+    73.86681,
+    18.53299
+  ],
+  "address": "Chinchwad, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d69"
+  },
+  "name": "Indian Oil",
+  "coordinates": [
+    73.87793,
+    18.52041
+  ],
+  "address": "Pune Station, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d6a"
+  },
+  "name": "Bharat Petroleum",
+  "coordinates": [
+    73.80019,
+    18.47195
+  ],
+  "address": "Pirangut, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d6b"
+  },
+  "name": "Shell",
+  "coordinates": [
+    73.852928,
+    18.529738
+  ],
+  "address": "Pashan, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d6c"
+  },
+  "name": "Essar Petrol Pump",
+  "coordinates": [
+    73.79498,
+    18.52701
+  ],
+  "address": "Bavdhan, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d6d"
+  },
+  "name": "Hindustan Petroleum",
+  "coordinates": [
+    73.789471,
+    18.52697
+  ],
+  "address": "Khadki, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d6e"
+  },
+  "name": "Reliance Petroleum",
+  "coordinates": [
+    73.79089,
+    18.5812
+  ],
+  "address": "Kondhwa, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d6f"
+  },
+  "name": "Indian Oil",
+  "coordinates": [
+    73.77139,
+    18.50993
+  ],
+  "address": "Viman Nagar, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d70"
+  },
+  "name": "BPCL",
+  "coordinates": [
+    73.77502,
+    18.49449
+  ],
+  "address": "Kalyani Nagar, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d71"
+  },
+  "name": "Hindustan Petroleum",
+  "coordinates": [
+    73.818798,
+    18.534721
+  ],
+  "address": "Aundh Road, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f3364cb4727a97302e7d72"
+  },
+  "name": "Indian Oil",
+  "coordinates": [
+    73.84494,
+    18.55417
+  ],
+  "address": "Hinjewadi Road, Pune, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f33687e6ec5479137f3478"
+  },
+  "name": "Indian Oil",
+  "coordinates": [
+    72.877655,
+    19.075983
+  ],
+  "address": "Mumbai, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f33687e6ec5479137f3479"
+  },
+  "name": "Bharat Petroleum",
+  "coordinates": [
+    77.594562,
+    12.971599
+  ],
+  "address": "Bengaluru, Karnataka"
+},
+{
+  "_id": {
+    "$oid": "65f33687e6ec5479137f347a"
+  },
+  "name": "Hindustan Petroleum",
+  "coordinates": [
+    77.1025,
+    28.7041
+  ],
+  "address": "New Delhi, Delhi"
+},
+{
+  "_id": {
+    "$oid": "65f33687e6ec5479137f347b"
+  },
+  "name": "Reliance Petroleum",
+  "coordinates": [
+    72.8777,
+    19.076
+  ],
+  "address": "Mumbai, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f33687e6ec5479137f347c"
+  },
+  "name": "Essar Oil",
+  "coordinates": [
+    72.5714,
+    23.0225
+  ],
+  "address": "Surat, Gujarat"
+},
+{
+  "_id": {
+    "$oid": "65f33687e6ec5479137f347d"
+  },
+  "name": "Shell",
+  "coordinates": [
+    72.8597,
+    19.2392
+  ],
+  "address": "Thane, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f33687e6ec5479137f347e"
+  },
+  "name": "Adani Gas",
+  "coordinates": [
+    72.5714,
+    23.0225
+  ],
+  "address": "Ahmedabad, Gujarat"
+},
+{
+  "_id": {
+    "$oid": "65f33687e6ec5479137f347f"
+  },
+  "name": "GAIL Gas",
+  "coordinates": [
+    77.1025,
+    28.7041
+  ],
+  "address": "New Delhi, Delhi"
+},
+{
+  "_id": {
+    "$oid": "65f33687e6ec5479137f3480"
+  },
+  "name": "CNG Gas Station",
+  "coordinates": [
+    88.3639,
+    22.5726
+  ],
+  "address": "Kolkata, West Bengal"
+},
+{
+  "_id": {
+    "$oid": "65f33687e6ec5479137f3481"
+  },
+  "name": "HPCL",
+  "coordinates": [
+    77.5946,
+    12.9716
+  ],
+  "address": "Bengaluru, Karnataka"
+},
+{
+  "_id": {
+    "$oid": "65f33751230a1110a1df02b3"
+  },
+  "name": "Indian Oil",
+  "coordinates": [
+    72.877655,
+    19.075983
+  ],
+  "address": "Mumbai, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f33751230a1110a1df02b4"
+  },
+  "name": "Bharat Petroleum",
+  "coordinates": [
+    77.594562,
+    12.971599
+  ],
+  "address": "Bengaluru, Karnataka"
+},
+{
+  "_id": {
+    "$oid": "65f33751230a1110a1df02b5"
+  },
+  "name": "Hindustan Petroleum",
+  "coordinates": [
+    77.1025,
+    28.7041
+  ],
+  "address": "New Delhi, Delhi"
+},
+{
+  "_id": {
+    "$oid": "65f33751230a1110a1df02b6"
+  },
+  "name": "Reliance Petroleum",
+  "coordinates": [
+    72.8777,
+    19.076
+  ],
+  "address": "Mumbai, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f33751230a1110a1df02b7"
+  },
+  "name": "Essar Oil",
+  "coordinates": [
+    72.5714,
+    23.0225
+  ],
+  "address": "Surat, Gujarat"
+},
+{
+  "_id": {
+    "$oid": "65f33751230a1110a1df02b8"
+  },
+  "name": "Shell",
+  "coordinates": [
+    72.8597,
+    19.2392
+  ],
+  "address": "Thane, Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65f33751230a1110a1df02b9"
+  },
+  "name": "Adani Gas",
+  "coordinates": [
+    72.5714,
+    23.0225
+  ],
+  "address": "Ahmedabad, Gujarat"
+},
+{
+  "_id": {
+    "$oid": "65f33751230a1110a1df02ba"
+  },
+  "name": "GAIL Gas",
+  "coordinates": [
+    77.1025,
+    28.7041
+  ],
+  "address": "New Delhi, Delhi"
+},
+{
+  "_id": {
+    "$oid": "65f33751230a1110a1df02bb"
+  },
+  "name": "CNG Gas Station",
+  "coordinates": [
+    88.3639,
+    22.5726
+  ],
+  "address": "Kolkata, West Bengal"
+},
+{
+  "_id": {
+    "$oid": "65f33751230a1110a1df02bc"
+  },
+  "name": "HPCL",
+  "coordinates": [
+    77.5946,
+    12.9716
+  ],
+  "address": "Bengaluru, Karnataka"
+}]
