@@ -1,127 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Registration</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        background: linear-gradient(145deg, #f5f6f7, #a2b5d1);
+        height: 100vh;
+        overflow: hidden;
+      }
+      .circle {
+        z-index: -40;
+        position: absolute;
+        background-color: #0056b3;
+        margin-left: 50%;
+        margin-top: -40%;
+        width: 200vh;
+        height: 200vh;
+        border-radius: 50%;
+      }
+      nav {
+        padding: 4vh 4vw 4vh 4vh;
+        display: flex;
+        font-size: larger;
+        justify-content: space-between;
+      }
+      nav img {
+        width: 100px;
+      }
+      nav ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 4vw;
+        color: white;
+        list-style: none;
+      }
+      main .details {
+        margin-left: 10vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      main .heading {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vh;
+      }
 
-        body {
-            background: linear-gradient(145deg, #f5f6f7, #a2b5d1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            
-        }
+      main .heading h3 {
+        color: gray;
+      }
+      label {
+        display: block;
+        color: gray;
+        font-weight: 500;
+        margin-bottom: 0.5vh;
+      }
+      input {
+        border: none;
+        border-bottom: solid 2px gray;
+        width: 20vw;
+        height: 4vh;
+        background-color: transparent;
+        font-size: larger;
+        color: black;
+      }
 
-        .container {
-            justify-content: center;
-            background: rgba(255, 255, 255, 0.297);
-            border-radius: 20px;
-            backdrop-filter: blur(20px);
-            padding: 40px;
-            max-width: 400px;
-            width: 100%;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
+      button {
+        color: white;
+        background-color: #0056b3;
+        width: 8vw;
+        height: 5vh;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        margin-top: 2vh;
+      }
 
-        .container:hover {
-            transform: translateY(-5px);
-        }
-
-        .logo {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .logo img {
-            width: 300px; /* Adjust the width as needed */
-        }
-
-        .title {
-            text-align: center;
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #007bff;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: #333;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 12px;
-            font-size: 16px;
-            border-radius: 25px;
-            border: none;
-            background-color: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease, background-color 0.3s ease;
-            outline: none;
-        }
-
-        .form-group input:focus {
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            background-color: rgba(255, 255, 255, 1);
-        }
-
-        .btn-submit {
-
-            background-color: #007bffaf;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 25px;
-            cursor: pointer;
-            width: 100%;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-submit:hover {
-            background-color: #0056b3;
-        }
-
+      main form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 40vh;
+        width: 25vw;
+      }
+      main .pic img {
+        position: absolute;
+        right: 8vw;
+        bottom: 10vh;
+        height: 60vh;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
     </style>
-</head>
-<body>
-    <div class="container">
-        <!-- <div class="logo">
-            <img src="https://raw.githubusercontent.com/PankajKumar17/Replica/main/1.png" alt="Lo">
-        </div> -->
-        <h2 class="title">Car Details</h2>
+  </head>
+  <body>
+    <div class="circle"></div>
+    <nav>
+      <img src="js.png" alt="" />
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/">Map</a></li>
+        <li><a href="">Name</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="details">
+        <div class="heading">
+          <h3>Enter Your</h3>
+          <h1>Car Details</h1>
+        </div>
         <form action="/submit" method="POST">
-            <div class="form-group">
-                <label for="name">Car Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="currentPetrol">Current Petrol</label>
-                <input type="number" id="currentPetrol" name="currentPetrol" required>
-            </div>
-            <div class="form-group">
-                <label for="mileage">Mileage</label>
-                <input type="number" id="mileage" name="mileage" required>
-            </div>
-            <button type="submit" class="btn-submit">Submit</button>
+          <div class="form-group">
+            <label for="name">Car Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="currentPetrol">Current Petrol</label>
+            <input
+              type="number"
+              id="currentPetrol"
+              name="currentPetrol"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="mileage">Mileage</label>
+            <input type="number" id="mileage" name="mileage" required />
+          </div>
+          <button type="submit" class="btn-submit">Submit</button>
         </form>
-    </div>
-</body>
+      </div>
+      <div class="pic">
+        <img src="https://github.com/PankajKumar17/Journey-Safer/blob/main/image/car.png?raw=true" alt="car" />
+      </div>
+    </main>
+  </body>
 </html>

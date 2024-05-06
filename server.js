@@ -100,7 +100,7 @@ app.post('/login', (req, res) => {
                     .then(result => {
                         if (result) {
                             req.session.userId = user._id;
-                            res.redirect('/');
+                            res.redirect('/home');
                         } else {
                             res.status(400).send('Invalid username or password');
                         }
